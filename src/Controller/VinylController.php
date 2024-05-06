@@ -10,10 +10,6 @@ use function Symfony\Component\String\u;
 
 class VinylController extends AbstractController
 {
-    public function __construct(
-        private bool $isDebug
-    ) {
-    }
 
     #[Route('/', name: 'app_homepage')]
     public function homepage(): Response
